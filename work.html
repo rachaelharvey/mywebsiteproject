@@ -5,78 +5,167 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Rachael Harvey | Projects</title>
-  <meta name="description" content="My Website">
-  <meta name="author" content="Rachael Harvey">
+  <title>Casablanca - For talented people</title>
+  <meta name="description" content="An awesome one page website">
+  <meta name="author" content="Miron Catalin Gabriel">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <!-- Javascript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="js/jquery.2.1.3.min.js"></script>
+  <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/scrollreveal.js"></script>
+  <script type="text/javascript" src="js/singlenav.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 
 </head>
 <body>
 
-  <!-- Menu -->
-    
-<nav class="navigation">
-    <a href="#" class="menu-icon">
-        <i class="fa fa-bars"></i>
-    </a>
-    <ul class="main-navigation">
-        <li><a href="home.html">Home</a></li>  
-        <li><a href="about.html">About</a></li>
-        <li><a href="work.html">Work</a></li>
-    </ul>
-    </nav>
+<!-- Menu -->
 
-<!-- Hero -->
-    
-    <section id="hero" class="hero u-full-width">
-    <div class="hero-image">
-        <div class="container centered">
-            <h1 class="seperator">Hi, I'm Rachael</h1>
-            <h2>Blah blah blah</h2>
-        </div>
+<nav class="navigation">
+  <a href="#" class="menu-icon">
+    <i class="fa fa-bars"></i>
+  </a>
+  <ul class="main-navigation">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="work.html">Work</a></li>
+  </ul>
+</nav>
+
+<!-- Creativity -->
+
+<section data-sr id="creativity" class="creativity u-full-width featured-bg-image">
+  <h4 class="centered">
+    <button class="button inverted">Work</button>
+  </h4>
+</section>
+
+<!-- Work -->
+
+<section data-sr id="work" class="work u-full-width">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h3 class="separator">Some of my work</h3>
+      </div>
     </div>
-    </section>
-    
-<!-- Introduction -->
- <section data-sr id="introducton" class="introduction u-full-width">
-    <div class="container">
-        <div class="row">
-            <div class="twelve columns">
-                <h3 class="seperator">Introduction</h3>
-                <h4>I'm a human wahoo</h4>
+    <div class="row">
+      <ul class="work-filters u-full-width">
+        <li class="active">
+          <a href="#" data-filter="*">All</a>
+        </li>
+        <li>
+          <a href="#" data-filter=".publishing">Publishing</a>
+        </li>
+        <li>
+          <a href="#" data-filter=".web-development">Web development</a>
+        </li>
+        <li>
+          <a href="#" data-filter=".writing">Writing</a>
+        </li>
+        <li>
+          <a href="#" data-filter=".tech">Tech</a>
+        </li>
+        <li>
+          <a href="#" data-filter=".innovation">Innovation</a>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <ul class="work-items isotope js-isotope u-cf">
+        <li class="four columns isotope-item design tech">
+          <img src="images/portfolio/work_1.svg">
+          <div class="work-detail">
+            <div class="vertical-centered">
+              <h3>Publishing</h3>
+              <p class="separator orange">Contract Law by Ewan McKendrick (OUP)</p>
             </div>
-        </div>
-     </div>
-    </section>
+          </div>
+        </li>
+        <li class="four columns isotope-item publishing web-development">
+          <img src="images/portfolio/work_2.svg">
+          <div class="work-detail">
+            <div class="vertical-centered">
+              <h3>Web Development</h3>
+              <p class="separator orange">Diagnostic Questions</p>
+            </div>
+          </div>
+        </li>
+        <li class="four columns isotope-item writing tech publishing">
+          <img src="images/portfolio/work_3.svg">
+          <div class="work-detail">
+            <div class="vertical-centered">
+              <h3>Writing / Tech</h3>
+              <p class="separator orange">Blavity</p>
+            </div>
+          </div>
+        </li>
+        <li class="four columns isotope-item writing innovation">
+          <img src="images/portfolio/work_4.svg">
+          <div class="work-detail">
+            <div class="vertical-centered">
+              <h3>Innovation</h3>
+              <p class="separator orange">Medium</p>
+            </div>
+          </div>
+        </li>
+        <li class="four columns isotope-item innovation publishing">
+          <img src="images/portfolio/work_5.svg">
+          <div class="work-detail">
+            <div class="vertical-centered">
+              <h3>Web Development</h3>
+              <p class="separator orange">The Jeli</p>
+            </div>
+          </div>
+        </li>
+        <li class="four columns isotope-item tech web-development innovation">
+          <img src="images/portfolio/work_6.svg">
+          <div class="work-detail">
+            <div class="vertical-centered">
+              <h3>Tech</h3>
+              <p class="separator orange">Build a Website in a Day Workshop</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 <!-- Footer -->
-    
-    <section data-sr class="footer u-full-width">
-        <div class="container">
-            <div class="row">
-                <div class="twelve columns">
-                    <h5>&copy 2016 Rachael Harvey</h5>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+
+<section data-sr class="footer u-full-width">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h5>&copy 2016 Rachael Harvey.</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
